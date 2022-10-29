@@ -22,12 +22,10 @@ You can install the package via composer:
 ```bash
 composer require ekremogul/filament-grapesjs
 ```
+## Usage
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="filament-grapesjs-migrations"
-php artisan migrate
+```php
+\Ekremogul\FilamentGrapesjs\Forms\Components\GrapesJs::make('content'),
 ```
 
 You can publish the config file with:
@@ -49,12 +47,7 @@ Optionally, you can publish the views using
 php artisan vendor:publish --tag="filament-grapesjs-views"
 ```
 
-## Usage
 
-```php
-$filamentGrapesjs = new Ekremogul\FilamentGrapesjs();
-echo $filamentGrapesjs->echoPhrase('Hello, Ekremogul!');
-```
 
 ## Testing
 
